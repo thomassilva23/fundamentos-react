@@ -11,6 +11,7 @@ import Aleatorio from "./components/basicos/Aleatorio";
 import Fragmento from "./components/basicos/Fragmento";
 import ComParametro from "./components/basicos/ComParametro";
 import Primeiro from "./components/basicos/Primeiro";
+import ParOuImpar from "./components/condicional/ParOuImpar";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => (
@@ -18,6 +19,10 @@ export default () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#08 - Renderização Condicional" color="#982395">
+        <ParOuImpar numero={20}></ParOuImpar>
+      </Card>
+
       <Card titulo="#07 - Desafio Repetição" color="#3A9AD9">
         <TabelaProdutos></TabelaProdutos>
       </Card>

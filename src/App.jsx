@@ -13,6 +13,7 @@ import ComParametro from "./components/basicos/ComParametro";
 import Primeiro from "./components/basicos/Primeiro";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicacao/DiretaPai";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => (
@@ -20,6 +21,10 @@ export default () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#09 - Comunicação Direta" color="#59323C">
+        <DiretaPai />
+      </Card>
+
       <Card titulo="#08 - Renderização Condicional" color="#982395">
         <ParOuImpar numero={20}></ParOuImpar>
         <UsuarioInfo usuario={{ nome: "Fernando" }}></UsuarioInfo>

@@ -1,5 +1,5 @@
 import React from "react";
-import If from "./If";
+import If, { Else } from "./If";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (props) => {
@@ -8,9 +8,9 @@ export default (props) => {
     <div>
       <If test={usuario && usuario.nome}>
         Seja bem vindo <strong>{usuario.nome}</strong>!
-      </If>
-      <If test={!usuario || !usuario.nome}>
-        Seja bem vindo <strong>Amigão</strong>!
+        <Else>
+          Seja bem vindo <strong>Amigão</strong>!
+        </Else>
       </If>
     </div>
   );
